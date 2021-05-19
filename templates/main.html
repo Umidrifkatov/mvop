@@ -1,0 +1,349 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block pic %}
+
+       {% if step == 1 %}
+
+
+        <img src="{% static "pics/2.svg" %}" alt="" style="max-width: 400px;">
+        {% endif %}
+        {% if step == 2 %}
+
+
+        <img src="{% static "pics/1.svg" %}" alt="" style="max-width: 400px;">
+        {% endif %}
+        {% if step == 3 %}
+
+
+        <img src="{% static "pics/3.svg" %}" alt="" style="max-width: 400px;">
+        {% endif %}
+        {% if step == 4 %}
+
+
+        <img src="{% static "pics/4.svg" %}" alt="" style="max-width: 400px;">
+        {% endif %}
+        {% if step == 5 %}
+
+
+        <img src="{% static "pics/5.svg" %}" alt="" style="max-width: 400px;">
+        {% endif %}
+        {% if step == 6 %}
+
+
+        <img src="{% static "pics/6.svg" %}" alt="" style="max-width: 400px;">
+        {% endif %}
+        {% if step == 7 %}
+
+
+        <img src="{% static "pics/2.svg" %}" alt="" style="max-width: 400px;">
+        {% endif %}
+        {% if step == 8 %}
+
+
+        <img src="{% static "pics/4.svg" %}" alt="" style="max-width: 400px;">
+        {% endif %}
+        {% if step == 9 %}
+
+
+        <img src="{% static "pics/7.svg" %}" alt="" style="max-width: 400px;"> <br><br><br><br><br><br>
+        
+        <img src="{% static "pics/6.svg" %}" alt="" style="max-width: 400px;"><br><br><br><br><br><br>
+        <img src="{% static "pics/8.svg" %}" alt="" style="max-width: 400px;">
+        {% endif %}
+
+{% endblock pic %}
+
+
+
+{% block content %}
+
+
+
+        {% if step == 1 %}
+        
+        <div class="row" style="margin-left: 70px;">
+                <div class="col-md-1 border border-warning"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+
+        </div>
+
+        <h5 class="mt-5"> Беморнинг ёшини киритинг</h5>
+        <input type="text" name="key" value="{{key}}" hidden>
+        <input class="w-25  mx-auto form-control mt-4 text-center" type="number" placeholder="Ёши" name="age" required>
+        <button  class="btn btn-warning mt-5" type="submit" > Кейинги қадам </button>
+        {% endif %}
+
+        {% if step == 2 %}
+        
+        <div class="row" style="margin-left: 70px;">
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-warning"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+
+
+                
+        </div>
+
+        <h5 class="mt-5"> Беморнинг жинсини танланг</h5>
+        <input type="text" name="key" value="{{key}}" hidden>
+        <br>
+        <input class="" type="radio" id="male" name="sex" value="True" required>
+        <label class="" for="male">Эркак</label>
+        <input class="" type="radio" id="female" name="sex" value="False" required>
+        <label class="" for="female">Аёл </label><br>
+        
+        
+        <button  class="btn btn-warning mt-5" type="submit" > Кейинги қадам </button>
+        
+        
+        {% endif %}
+
+        {% if step == 3 %}
+        <div class="row" style="margin-left: 70px;">
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-warning"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+
+
+                
+        </div>
+
+        <h5 class="mt-5"> Беморнинг вазни ва буйини киритинг</h5>
+        <input type="text" name="key" value="{{key}}" hidden>
+
+        <input class="w-25  mx-auto form-control mt-4 text-center mb-1" type="number" name="height" id="" placeholder="Буйи см" required>
+        <input class="w-25  mx-auto form-control mt-1 text-center"  type="number" name="weight" id="" placeholder="Вазни кг" required>
+    
+
+
+        <button  class="btn btn-warning mt-5" type="submit" > Кейинги қадам </button>
+        {% endif %}
+
+        {% if step == 4 %}
+        <div class="row" style="margin-left: 70px;">
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-warning"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+
+
+                
+        </div>
+
+        <h5 class="mt-5"> Умумий қон таҳлилида ЭЧТ миқдори</h5>
+        <input type="text" name="key" value="{{key}}" hidden>
+
+                            <br><br>    <input class="ml-1" type="radio" id="echt0" name="echt" value="False" required>
+                                <label class="" for="echt0">2-15 мм/соат</label>
+                                <input class="ml-1" type="radio" id="echt1" name="echt" value="True" required>
+                                <label class="" for="echt1">15 мм/соат дан куп</label><br>
+        
+        
+        
+        
+        <button  class="btn btn-warning mt-5" type="submit" > Кейинги қадам </button>
+        
+        
+        
+        {% endif %}
+
+        {% if step == 5 %}
+        <div class="row" style="margin-left: 70px;">
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-warning"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+
+
+                
+        </div>
+
+        <h5 class="mt-5"> Синовит мавжудми?</h5>
+        <input type="text" name="key" value="{{key}}" hidden>
+
+        
+                <br><br> <input class="ml-1" type="radio" id="sinovit0" name="sinovit" value="True" required>
+                <label class="" for="sinovit0">Мавжуд</label>
+                <input class="ml-1" type="radio" id="sinovit1" name="sinovit" value="False" required>
+                <label class="" for="sinovit1">Мавжуд эмас</label><br>
+        
+        
+        
+        
+        <button  class="btn btn-warning mt-5" type="submit" > Кейинги қадам </button>
+        
+        
+        {% endif %}
+
+        {% if step == 6 %}
+        <div class="row" style="margin-left: 70px;">
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-warning"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+
+
+                
+        </div>
+        <h5 class="mt-5">С-реактив оқсил миқдори</h5>
+        <input type="text" name="key" value="{{key}}" hidden>
+        
+                           <br> <input class="ml-1" type="radio" id="react0" name="c_react" value="False" required>
+                            <label class="" for="react0">5 мг/л дан кам</label><br>
+                            <input class="ml-1" type="radio" id="react1" name="c_react" value="True" required>
+                            <label class="" for="react1">5 мг/л дан куп</label> <br>
+
+
+
+
+        <button  class="btn btn-warning mt-5" type="submit" > Кейинги қадам </button>
+        {% endif %}
+
+        {% if step == 7 %}
+        <div class="row" style="margin-left: 70px;">
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-warning"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+
+
+          
+        </div>
+
+        <h5 class="mt-5"> Беморда аникланган СОМР (Тоғай олигомер матрикс оқсили) миқдорини киритинг (нг/мл) </h5>
+        <input type="text" name="key" value="{{key}}" hidden>
+        
+
+       <br>
+                                <div class="form-group ">
+                                    <input class="form-control w-25 mx-auto" type="number" name="comp" required >
+                                </div> 
+
+
+
+        <button  class="btn btn-warning mt-5" type="submit" > Кейинги қадам </button>
+        {% endif %}
+
+        {% if step == 8  %}
+        <div class="row" style="margin-left: 70px;">
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-ligth"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-warning"></div>
+                <div class="col-md-1 border border-light"></div>
+
+        </div>
+        <h5 class="mt-5"> Рентгенологик босқич (Келлгрен Лоуренс бўйича)</h5>
+        <input type="text" name="key" value="{{key}}" hidden>
+
+        <br>
+                                <input class="ml-1" type="radio" id="0" name="xray" value="0" required>
+                                <label class="" for="0">0</label>
+                                <input class="ml-1" type="radio" id="1" name="xray" value="1" required>
+                                <label class="" for="1">1</label>
+                                <input class="ml-1" type="radio" id="2" name="xray" value="2" required>
+                                <label class="" for="2">2</label>
+                                <input class="ml-1" type="radio" id="3-4" name="xray" value="3" required>
+                                <label class="" for="3-4">3-4</label><br>
+
+                                <a href="/"  class="btn btn-warning mt-5" > Кайтадан бошлаш </a>
+                                <button  class="btn btn-warning mt-5" type="submit" > Тавсиялар олиш </button> 
+      
+        {% endif %}
+
+
+        {% if step == 9  %}
+        <div class="row" style="margin-left: 70px;">
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-light"></div>
+                <div class="col-md-1 border border-warning"></div>
+
+        </div>
+                                
+                                <p class=" py-4 rounded" style="font-size: 25px;">{{rec1 | safe}}</p>
+                                <h1 style="color: rgb(247, 245, 241);">Тавсиялар</h1><br>
+                                
+                {% if rec2 %}   <p class="border  rounded" style="font-size: 20px;">{{rec2 }}</p><br> {% endif %}
+                                <p class="border rounded" style="font-size: 20px;">{{rec3}}</p><br>
+                                  
+                                  <h5>Машкларни бажариш буйича курсатма</h5>
+                                <a data-toggle="collapse"  role="button" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1" class="btn btn-warning ">I машқ</a>
+                                <a data-toggle="collapse"  role="button" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" class="btn btn-warning ">II машқ</a>
+                                <a data-toggle="collapse"  role="button" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3" class="btn btn-warning ">III машқ</a>
+                                <br><br>
+                                
+                                
+                                <div class="collapse" id="collapseExample1">
+                                        <div class="">
+                                                <p class="border  rounded" style="font-size: 20px;">{{lfk1}}</p><br>
+                                         </div>
+                                      </div>
+                                      <div class="collapse" id="collapseExample2">
+                                        <div class="">
+                                                <p class="border  rounded" style="font-size: 20px;">{{lfk2}}</p><br>
+                                         </div>
+                                      </div>
+                                      <div class="collapse" id="collapseExample3">
+                                        <div class="">
+                                                <p class="border  rounded" style="font-size: 20px;">{{lfk3}}</p><br>
+                                         </div>
+                                      </div>
+
+                                 
+
+                        <br>         <a href="/"  class="btn btn-warning mt-5" > Кайтадан бошлаш </a>
+        
+        {%  endif %}
+
+{% endblock content %}

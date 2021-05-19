@@ -1,0 +1,74 @@
+
+{% load static %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'main/bootstrap.min.css' %}" >
+    <link rel="stylesheet" href="{% static 'main/main.css' %}">
+    <title>Vop</title>
+  </head>
+
+  <body class="bg-dark">
+    <div class="mx-5 ">
+
+      <form  class="" action="" method="POST">{% csrf_token %}
+        
+
+        <div class="bg-info mx-5 mt-5 rounded shadow text-center text-light p-4" style="min-height: 600px;">
+    
+            <h2 class="mt-3 text-center ">Остеоартритнинг эрта даврларида COMP миқдорига кўра давонинг электрон дастури</h2><br>
+            <hr>
+            <div class="row">
+
+              <div class="col-md-6">
+                {% block pic %}
+
+                {% endblock pic %}
+
+                
+                
+              </div>
+
+              <div class="col-md-6">
+    
+            {% block content %}
+            {% endblock %}
+          </div>
+          </div>
+
+    
+    
+      </div>
+    
+    
+    </form>
+
+
+
+   
+  </div>
+
+    
+    
+    
+    
+    
+    
+   
+    
+    
+    
+    
+    <footer class="bg-light text-center text-lg-start">
+
+
+    </footer>
+      
+    
+    <script src="{% static 'main/jquery-3.2.1.slim.min.js' %}"></script>
+      <script src="{% static  'main/popper.min.js' %}"></script>
+      <script src="{% static 'main/bootstrap.min.js' %}"></script>
+  </body>
+</html>

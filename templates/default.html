@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+
+
+
+
+<form  class="" action="" method="POST">{% csrf_token %}
+    <div class="container mt-3 ">
+        <div class="row">
+            <div class="col-md-2"></div>
+                <div class="col-md-8 my-auto bg-info text-light rounded shadow" style="min-height: 500px;">
+
+                    <h2 class="mt-3 text-center">Остеоартритнинг эрта даврларида COMP миқдорига кўра давонинг электрон дастури</h2><br>
+                        <!-- Пол -->
+                        <div class="row">
+                            <div class="col-md-6">
+
+                            
+
+                        
+                        <h5>Йошни киритинг</h5>
+                         <!-- Возраст -->
+                         <input class="form-control" type="number" placeholder="Йоши" required>
+
+
+                         <br><h5>Гендерни танланг</h5>
+                            <input class="" type="radio" id="male" name="gender" value="male" required>
+                            <label class="" for="male">Еркак</label><br>
+                            <input class="" type="radio" id="female" name="gender" value="female" required>
+                            <label class="" for="female">Аёл</label>
+
+
+
+
+
+                           
+
+                            <br><br><h5>С-реактив оқсил миқдори</h5>
+                            <input class="ml-1" type="radio" id="react0" name="c-react" value="0" required>
+                            <label class="" for="react0">5 мг/л дан кам</label><br>
+                            <input class="ml-1" type="radio" id="react1" name="c-react" value="1" required>
+                            <label class="" for="react1">5 мг/л дан куп</label>
+
+
+                           <br> <br><h5>Рентгенологик босқич (Келлгрен Лоуренс бўйича)</h5>
+                                <input class="ml-1" type="radio" id="0" name="xray" value="0" required>
+                                <label class="" for="0">0</label>
+                                <input class="ml-1" type="radio" id="1" name="xray" value="1" required>
+                                <label class="" for="1">1</label>
+                                <input class="ml-1" type="radio" id="2" name="xray" value="2" required>
+                                <label class="" for="2">2</label>
+                                <input class="ml-1" type="radio" id="3-4" name="xray" value="3" required>
+                                <label class="" for="3-4">3-4</label>
+                            
+                            <br> <br><h5>Синовит мавжудми?</h5>
+                                <input class="ml-1" type="radio" id="sinovit0" name="sinovit" value="True" required>
+                                <label class="" for="sinovit0">Мавжуд</label>
+                                <input class="ml-1" type="radio" id="sinovit1" name="sinovit" value="False" required>
+                                <label class="" for="sinovit1">Мавжуд емас</label>
+
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <h5>ИМТ учун</h5>
+                                <input class="form-control mb-1" type="number" name="height" id="" placeholder="Бойи сантиметрда" required>
+                                <input class="form-control"  type="number" name="weight" id="" placeholder="Вазни киллограмда" required>
+                            
+
+
+
+                                <br><br><br><h5>Умумий қон таҳлилида ЭЧТ миқдори</h5>
+                                <input class="ml-1" type="radio" id="echt0" name="echt" value="False" required>
+                                <label class="" for="echt0">2-15 мм/соат</label><br>
+                                <input class="ml-1" type="radio" id="echt1" name="echt" value="True" required>
+                                <label class="" for="echt1">15 мм/соат дан куп</label>
+
+                                <br><br><h5>СOMP (тоғай матрикс олигомер оқсили) миқдори</h5>
+                                <div class="form-group">
+                                    <select class="form-control" name="COMP" required>
+                                        <option value=""></option>
+                                      <option value="1000">50-1000 нг/мл</option>
+                                      <option value="1500">50-1500 нг/мл</option>
+                                      <option value="2000">50-2000 нг/мл</option>
+                                    </select>
+                                  </div>
+
+
+
+                            </div>
+                            
+                            <button class="btn btn-warning mx-auto mt-5 mb-3" type="submit">Тавсиялар олиш</button>
+                        </div>
+                            
+
+                        
+
+
+                </div>
+                <div class="col-md-2"></div>
+
+
+
+
+
+                
+            
+        </div>
+    </div>
+</form>
+
+
+{% endblock content %}
