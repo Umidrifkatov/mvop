@@ -17,6 +17,12 @@ def passgenerate():
 
 
 
+def first(request):
+
+    return render(request, 'firstpage.html')
+
+
+
 
 
 def main(request):
